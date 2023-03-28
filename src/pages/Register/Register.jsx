@@ -73,7 +73,7 @@ function Register() {
     <div className={ styles.pageRegister }>
       <section className={ styles.registerContainer }>
         <h1>Cadastro</h1>
-        <form>
+        <form autoComplete="off">
           <label htmlFor="username">
             <input
               type="text"

@@ -39,7 +39,7 @@ function Search() {
       <Header />
       <div className={ styles.searchContainer }>
         <h1>Buscar</h1>
-        <form className={ styles.searchForm }>
+        <form className={ styles.searchForm } autoComplete="off">
           <label htmlFor="artist">
             <input
               type="text"

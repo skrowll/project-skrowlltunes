@@ -73,7 +73,7 @@ function Login() {
     <div className={ styles.pageLogin }>
       <section className={ styles.loginContainer }>
         <h1>Login</h1>
-        <form>
+        <form autoComplete="off">
           <label htmlFor="username">
             <input
               type="text"
