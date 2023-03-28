@@ -1,0 +1,15 @@
+.favoriteCheckbox {
+  cursor: pointer;
+}
+
+.favoriteCheckbox > input {
+  display: none;
+}
+
+.favoriteIcon {
+  color: #535353;
+}
+
+input:checked ~ .favoriteIcon {
+  color: #1db954;
+}

@@ -1,0 +1,99 @@
+.searchPage {
+  width: 100%;
+  height: 100vh;
+}
+
+.searchContainer {
+  height: 6rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #12121278 0%, #1db954 10%);
+}
+
+.searchContainer h1 {
+  font-size: 2rem;
+}
+
+.searchForm {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchForm input {
+  width: 30vw;
+  height: 2.5rem;
+  border: none;
+  border-radius: 2.5rem;
+  padding-left: 1.5rem;
+  background-color: #212121;
+  color: #f8f8f8;
+}
+
+.searchForm input:focus {
+  outline: none;
+}
+
+.searchForm button {
+  background-color: #121212;
+  position: absolute;
+  right: 0;
+  width: 3rem;
+  height: 2.5rem;
+  border: 0;
+  border-radius: 0 2.5rem 2.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.searchForm button:disabled {
+  background-color: #212121;
+  cursor: not-allowed;
+}
+
+.searchForm button:disabled i {
+  color: #535353;
+}
+
+.searchForm button > i {
+  color: #1db954;
+}
+
+.resultContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.returnText {
+  color: #1db954;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-top: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.albumCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.albumCardContainer a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .searchForm input {
+    width: 80vw;
+  }
+}

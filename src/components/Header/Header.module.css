@@ -1,0 +1,218 @@
+.headerContainer {
+  background-color: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoContainer > img {
+  width: 3rem;
+  margin: 1.5rem;
+}
+
+.logoContainer > h1 {
+  color: #1db954;
+  font-size: 1.5rem;
+}
+
+.headerNavigation ul {
+  display: flex;
+  justify-content: space-between;
+  width: 25vw;
+}
+
+.headerNavigation ul li {
+  list-style-type: none;
+}
+
+.headerNavigation ul li a {
+  color: #1db954;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.profileContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.profileContainer > span {
+  position: absolute;
+  background-color: #121212;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  top: 0.3rem;
+  left: 0.3rem;
+  color: #535353;
+}
+
+.usernameContainer {
+  margin-right: 1rem;
+  border-radius: 3rem;
+  width: 16rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  background-color: #212121;
+}
+
+.usernameText{
+  margin-left: 3.5rem;
+  background-color: transparent;
+  color: #b3b3b3;
+}
+
+.logoutButton {
+  margin-right: 1rem;
+  background-color: #1db954;
+  border: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.buttonMenuMobile {
+  display: none;
+}
+
+.menuMobile {
+  display: none;
+  position: absolute;
+  top: 3rem;
+  width: 100%;
+  z-index: 1;
+  background-color: #121212;
+}
+
+@media only screen and (max-width: 600px) {
+  .headerContainer {
+    height: 3rem;
+  }
+  
+  .logoContainer {
+    height: 3rem;
+    width: 3rem;
+  }
+  
+  .logoContainer > img {
+    width: 2rem;
+    margin: .5rem;
+  }
+  
+  .logoContainer > h1 {
+    font-size: 1rem;
+  }
+  
+  .headerNavigation ul {
+    display: none;
+  }
+  
+  .profileContainer {
+    display: none;
+  }
+
+  .buttonMenuMobile {
+    display: flex;
+    margin-right: .5rem;
+  }
+
+  .buttonMenuMobile button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: none;
+    background-color: transparent;
+  }
+
+  .buttonMenuMobile button > i {
+    font-size: 2rem;
+    color: #1db954;
+  }
+
+  .menuMobile {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .open {
+    display: flex;
+  }
+
+  .profileContainerMobile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #212121;
+    width: 90%;
+    height: 2.5rem;
+    border-radius: 3rem;
+    margin: .5rem;
+    padding-left: 1rem;
+    color: #535353;
+  }
+
+  .profileContainerMobile i {
+    position: absolute;
+    background-color: #121212;
+    right: 0.25rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menuMobile ul li {
+    list-style-type: none;
+    width: 100vw;
+    padding-right: 2rem;
+    text-align: right;
+    font-size: x-large;
+    margin-bottom: .5rem;
+  }
+
+  .menuMobile ul li a {
+    color: #1db954;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .menuMobile button {
+    width: 90%;
+    height: 2.5rem;
+    background-color: #1db954;
+    border: none;
+    border-radius: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .menuMobile button span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    font-size: large;
+    font-weight: 500;
+  }
+}

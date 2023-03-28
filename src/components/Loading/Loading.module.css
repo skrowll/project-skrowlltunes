@@ -1,0 +1,15 @@
+.loader {
+  border: calc(1.5rem * var(--size) / 8) solid #ffffff50;
+  border-radius: 50%;
+  border-top: calc(1.5rem * var(--size) / 8) solid #ffffff20;
+  width: calc(1rem * var(--size));
+  height: calc(1rem * var(--size));
+  margin: calc(1.5rem * var(--size) / 8);
+  animation: spin 1.5s ease-in-out infinite;
+  color: transparent;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

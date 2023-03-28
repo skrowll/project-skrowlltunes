@@ -1,0 +1,126 @@
+.pageAlbum {
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  height: calc(100vh - 15rem);
+}
+
+aside {
+  width: 20vw;
+  height: calc(100vh -15rem);
+  color: #f8f8f8;
+  margin: 1rem;
+}
+
+aside > img {
+  display: block;
+  width: 80%;
+  margin: 1.5rem auto;
+}
+
+aside > h3, aside > p {
+  text-align: left;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.artistName {
+  font-size: large;
+  color: #1db954;
+}
+
+.genre, .year {
+  color: #535353;
+  font-size: small;
+}
+
+.trackList {
+  width: 100%;
+  overflow-y: scroll;
+  color: #f8f8f8;
+}
+
+.track {
+  width: 100%;
+  border-bottom: solid 1px #53535350;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  border-radius: 5px;
+}
+
+.trackName {
+  margin-left: 20px;
+}
+
+.track:hover {
+  background-color: #212121;
+}
+
+.rightContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rightContainer > span {
+  margin-right: 20px;
+  color: #b3b3b3;
+}
+
+.active {
+  border-left: solid 0.2rem #1db954;
+  background-color: #1db95420;
+}
+
+.playerContainer {
+  background-color: #1db954;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .pageAlbum {
+    max-height: 100vh;
+    max-width: 100vw;
+  }
+  
+  main {
+    flex-direction: column;
+    height: calc(100% - 8rem);
+  }
+
+  aside {
+    width: 100vw;
+    height: 10rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  aside > img {
+    display: block;
+    width: 30%;
+    margin: 1rem;
+  }
+
+  .playerContainer {
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}

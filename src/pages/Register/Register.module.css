@@ -1,0 +1,90 @@
+.pageRegister {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../assets/patternpad.svg');
+}
+
+.registerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #121212;
+  border-radius: 2.5rem;
+  padding: 2rem;
+  width: 20%;
+  min-width: 24rem;
+}
+
+.registerContainer h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #1db954;
+}
+
+.registerContainer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.registerContainer label {
+  width: 100%;
+}
+
+.registerContainer input {
+  width: 100%;
+  height: 3.5rem;
+  padding: 0 1rem;
+  margin: 0.5rem 0;
+  border: 0;
+  border-radius: 1rem;
+  outline: none;
+  background: #212121;
+  font-size: 1rem;
+  color: #f8f8f8;
+}
+
+.registerContainer input:focus {
+  box-shadow: 0 0 1em #535353;
+}
+
+.registerContainer button {
+  width: 100%;
+  height: 3.5rem;
+  padding: 0 1rem;
+  margin: 1rem 0 0.5rem 0;
+  border: 0;
+  border-radius: 1rem;
+  outline: none;
+  background: #1db954;
+  color: #121212;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.registerContainer button:disabled {
+  background: #1db95422;
+  color: #f8f8f822;
+  cursor: not-allowed;
+}
+
+.registerContainer span {
+  color: #535353;
+}
+
+.registerContainer span > a {
+  margin-left: 0.5rem;
+  color: #1db954;
+}
+
+.warning {
+  font-size: small;
+  color: red;
+}
