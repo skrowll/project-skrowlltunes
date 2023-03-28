@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import Loading from '../Loading';
 import styles from './AudioPlayer.module.css';
 
 function AudioPlayer(props) {
   const { track } = props;
   const [isPlaynig, setIsPlaying] = useState(false);
   const [isMuted, setIsMutedo] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [previousVolume, setPreviousVolume] = useState(0);
   const [totalTime, setTotalTime] = useState('00');
   const [currentTime, setCurrentTime] = useState('00');
@@ -28,6 +30,7 @@ function AudioPlayer(props) {
     audio?.load();
     audio?.pause();
     setIsPlaying(false);
+    setLoading(false)
   }, [track]);
 
   useEffect(() => {
@@ -84,7 +87,14 @@ function AudioPlayer(props) {
   return (
     <>
       <div className={ styles.leftContainer }>
-        <p>{ `${track?.trackNumber}. ${track?.trackName}` }</p>
+        {
+          loading
+            ?(
+              <Loading size="1" />
+            ) : (
+              <p>{ `${track?.trackNumber}. ${track?.trackName}` }</p>
+              )
+            }
       </div>
       <div className={ styles.centerContainer }>
         <div className={ styles.buttonContainer }>
