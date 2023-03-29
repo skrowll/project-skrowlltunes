@@ -3,7 +3,7 @@
 Este projeto consiste em uma aplicação criada para permitir que o usuário pesquise por álbuns musicais de um artista específico. Ao digitar o nome do artista na barra de pesquisa, o usuário verá uma lista de álbuns disponíveis e, ao clicar em um dos álbuns, poderá visualizar a lista de músicas correspondentes e favoritá-las. Além disso, cada música terá uma prévia de 30 segundos para que o usuário possa escutá-la.
 Futuramente o usuário deverá ser capaz de conferir a lista das múiscas favoritas e também de alterar informações do seu perfil.
 ##### API utilizada: [iTunes](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html#//apple_ref/doc/uid/TP40017632-CH3-SW1)
-##### Para o Login foi criado um CRUD de usuários utilizando uma API Restfull feita com Node.js, Express e Sequelize se conectando à um banco de dados PostgreSQL, seguindo a arquitetura de software MSC. [Repositório](https://github.com/skrowll/api-postgres-render)
+##### Para o Login foi criado uma API Restful fazendo um CRUD de usuários em um banco de dados PostgreSQL com Node.js, Express e Sequelize, seguindo a arquitetura de software MSC. [Repositório](https://github.com/skrowll/api-postgres-render)
 
 # Sumário
 - [Boas vindas ao repositório do projeto SkrowllTunes!](#boas-vindas-ao-repositório-do-projeto-skrowlltunes)
